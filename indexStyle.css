@@ -1,0 +1,299 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* top Menu */
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+    height: 2000px;
+    background: linear-gradient(#ffd2d7 0%, #ffa7b1 10%, #6e4b4f 20%, #1a1a1a 30%);
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topMenu {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo img{
+    width: 130px;
+    transition: fill 0.3s ease;
+}
+
+.topMenu ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+}
+
+.topMenu a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.topMenu a:hover{
+    color: #1db954;
+}
+
+.topMenu li.divider { /* 메뉴 구분선 생성 */
+    flex: none;
+    width: 1px;
+    height: 18px;
+    background-color: white;
+}
+
+/* main top */
+
+.main {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.mainTop {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTopImg {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mainTopImg img {
+    width: 50vw;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+.mainText1 {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0px 30px;
+    color: white;
+}
+
+.mainText1 h1{
+    text-align: left;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.mainText1 p{
+    padding: 10px 0px;
+}
+
+.topButton {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+.topButton #topBt1 {
+    padding: 0px 20px;
+    background-color: #ffd2d7;
+    border-radius: 40px;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.topButton #topBt2 {
+    padding: 0px 20px;
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.topButton #topBt1:hover {
+    background-color: white;
+    transform: scale(105%);
+}
+
+.topButton #topBt2:hover {
+    background-color: #1db954;
+    color: black;
+    transform: scale(105%);
+}
+
+
+/* main mid */
+
+.mainMid {
+    padding-bottom: 150px;
+}
+
+.midText1 {
+    color: white;
+    text-align: center;
+}
+
+
+.midText1 h1{
+    font-size: 50px;
+}
+
+.midText1 p{
+    font-size: 20px;
+}
+
+
+/* main table */
+
+.chart {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.tableHead2 th{
+    border-bottom: 1px solid white;
+}
+
+.tableHead td {
+    border-bottom: 1px solid white;
+}
+
+.table {
+    height: 600px;
+    width: 600px;
+    color: white;
+    text-align: center;
+    border-collapse: collapse;
+}    
+
+.table .tableTitle2 {
+    padding: 10px;
+    text-align: left;
+}
+
+td{ 
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-style: dotted;
+}
+
+th {
+    font-size: 18px;
+}
+
+.tableHead2 th img {
+    width: 16px;
+}
+
+.tableHead td img {
+    width: 35px;
+}
+
+.tableHead:hover td {
+    background-color: rgb(40, 40, 40);
+}
+
+.tableHead:hover td.check{
+    background-color: rgb(60, 60, 60);
+}
+
+
+/* main bottom */
+
+.mainBottom {
+    gap: 70px;
+    max-width: 1500px;
+    margin: 150px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomImg img {
+    width: 200px;
+}
+
+.bottomTitle {
+    text-align: center;
+    color: white;
+}
+
+.bottomTitle img {
+    width: 25px;
+}
+
+.bottomtitle2 ul {
+    color: white;
+    list-style: none;
+    line-height: 1.7;
+}
+
+
+
+/* footer */
+
+.bottomInfo p{               
+    font-weight: 400;       
+    font-size: 14px;      
+}
+
+#bottomText1 {
+    text-align: left;
+}
+
+#bottomText {
+    text-align: right;
+}
+
+.bottomInfo img {
+    width: 40px;
+    position: absolute;
+    left: 50%;   
+    transform: translateX(50%);
+}
+
+.bottomInfo {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0px 30px;
+    display: flex;           
+    justify-content: space-between; 
+    width: 100%;           
+    color: white;
+    position: relative;
+}
+
+.imagebox3 {
+    height: 100px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
