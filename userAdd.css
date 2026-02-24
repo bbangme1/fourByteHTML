@@ -1,0 +1,105 @@
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+}
+
+/* header */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+/* main */
+
+
+
+.flex {
+    height: 920px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+}
+
+
+#name, #subsDate {
+    margin-bottom: 20px;
+}
+
+.mainFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text1{
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+input#name, input#subsDate {
+    padding-left: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    width: 300px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    background-color: #1db954;
+    font-size: 16px;
+    height: 40px;
+    width: 300px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #20ff6e;
+}
+
+.appIcon img {
+    width: 300px;
+}
+
+.text3{
+    text-align: center;
+    color: rgb(97, 97, 97);
+    font-size: 12px;
+    margin-top: 20px;
+}
+
